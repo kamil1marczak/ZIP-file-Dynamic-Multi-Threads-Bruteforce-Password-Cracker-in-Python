@@ -17,7 +17,7 @@ class PasswordGenerator:
 
         self.alphanumeric = []
         self.alphanumeric += string.ascii_uppercase if '-u' in args else []
-        self.alphanumeric += string.ascii_lowercase if '-l' else []
+        self.alphanumeric += string.ascii_lowercase if '-l' in args else []
         self.alphanumeric += string.digits if '-d' in args else []
         self.alphanumeric += string.punctuation if '-p' in args else []
 
